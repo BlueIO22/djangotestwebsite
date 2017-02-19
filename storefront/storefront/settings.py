@@ -78,6 +78,11 @@ STATICFILES_DIRS = [
     '/var/www/static/',
 ]
 
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'var/www/media')
+
+
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 

@@ -3,12 +3,22 @@
         {% load static %}
 
         <link rel="stylesheet" type="text/css" href="static/style.css"/>
+        <link rel="stylesheet" type="text/css" href="static/style.css"/>
         <title>Store -- {{ product.name }}</title>
         <link rel="stylesheet" href="{% static 'style.css' %}" />
     </head>
     <body>
-    <h1>{{ product.name }}</h1>
-    <div class="box-p"><p class="header-p">Beskrivelse:</p><p align="center">{{ product.description }}</p></div>
-    <p>Pris: {{ product.price }}</p>
+        <h1>{{ product.name }}</h1>
+        <p>Kategori: {{ product.category }}</p>
+             <div class="box-main">
+                <div class="box-p-image"><img src="{{ product.image.url }}"></div>
+                <div class="box-p-description"><p class="header-p">Beskrivelse:</p></duv><p>{{ product.description }}</p></div>
+                <div class="box-p-review" style="margin:auto"><iframe style="verflow:hidden" width="800" height="350" src="{{ product.reviewlink }}" frameborder="0" allowfullscreen></iframe></div>
+            </div>
+        <div class="extension"></div>
+    <div class="foot">
+        <div class="p-button"><a href="" style="text-decoration:none">{{ product.price }},-</a></div>
+</div>
+
     </body>
 </html>
