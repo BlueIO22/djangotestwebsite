@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Django Website Toturial on - YouTube</title>
+    </head>
+    <body>
+    <h1>-Store-</h1>
+    <ul>
+        {% for category in categories %}
+            <li> {{ category.name }}
+            <ul>
+                {% for product in category.product_set.all %}
+                    <li><a href="/product/{{ product.id }}">{{ product.name }}</a></li>
+                {% endfor %}
+            </ul>
+            </li>
+        {% endfor %}
+    </ul>
+    </body>
+</html>

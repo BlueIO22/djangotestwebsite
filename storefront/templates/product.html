@@ -1,0 +1,14 @@
+<html>
+    <head>
+        {% load static %}
+
+        <link rel="stylesheet" type="text/css" href="static/style.css"/>
+        <title>Store -- {{ product.name }}</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}" />
+    </head>
+    <body>
+    <h1>{{ product.name }}</h1>
+    <div class="box-p"><p class="header-p">Beskrivelse:</p><p align="center">{{ product.description }}</p></div>
+    <p>Pris: {{ product.price }}</p>
+    </body>
+</html>

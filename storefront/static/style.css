@@ -1,0 +1,31 @@
+body{
+    margin:auto;
+    background-color: #2ecc71;
+}
+
+p{
+    font-family: Brush Script MT,cursive;
+    margin:auto;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:2px;
+    width: 90%;
+     vertical-align: middle;
+}
+
+.box-p{
+    margin:auto;
+    width:60%;
+    vertical-align: middle;
+    box-shadow: 1px 0px 1px 1px black;
+    margin-bottom:5%;
+}
+
+.header-p {
+    font-size:20px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    margin:auto;
+}
